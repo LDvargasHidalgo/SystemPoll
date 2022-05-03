@@ -1,9 +1,16 @@
 <!-- home.html -->
+
 {% extends "poll/base.html" %}
 
+{% load static %}
 {% block title %}SystemPoll{% endblock %}
 
 {% block main %}
+
+
+
+
+    
 <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
         <div class="panel panel-default">
@@ -11,7 +18,7 @@
                 <h3 class="panel-title">Available Polls</h3>
             </div>
            
-
+           
             <ul class="list-group">
                 {% for poll in polls %}
                 <li class="list-group-item">
@@ -31,8 +38,9 @@
                 </li>
             </ul>
             <img align="right" src="https://user-images.githubusercontent.com/90289472/166124986-423f9d23-b979-4fbb-9c3d-8ee75bdaf78c.gif"/>
-
         </div>
-    </div>
+    </div>   
+    <img class="image_home" src='{% static "img/encuesta.png" %}' width="300px" alt="">
 </div>
+
 {% endblock %}
